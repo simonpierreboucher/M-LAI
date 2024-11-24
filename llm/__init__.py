@@ -1,7 +1,9 @@
+# llm/__init__.py
 from .providers.openai_provider import OpenAILLM
 from .providers.anthropic_provider import AnthropicLLM
 from .providers.mistral_provider import MistralLLM
 from .providers.cohere_provider import CohereLLM
+from .chatbot import Chatbot  # Add this line
 
 class LLM:
     @staticmethod
