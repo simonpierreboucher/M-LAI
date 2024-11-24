@@ -1,10 +1,9 @@
-# llm/chatbot.py
-
 from typing import List, Dict, Optional, Generator
 from dataclasses import dataclass
 from datetime import datetime
 import json
-from . import LLM
+from .base_llm import LLM  # Import from base_llm instead
+
 
 @dataclass
 class Entity:
